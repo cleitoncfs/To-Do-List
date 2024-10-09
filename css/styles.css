@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #0077b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    width: 450px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Press Start 2P', cursive;
+    color: #023047;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.erro {
+    color: #d00000;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+    font-weight: 500;
+}
+
+.input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input {
+    flex: 1;
+    height: 45px;
+    background-color: #e5e5e5;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.input:focus {
+    background-color: #ffffff;
+    border-color: #0077b6;
+}
+
+.botao_adc {
+    width: 45px;
+    height: 45px;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao_adc:hover {
+    background-color: #005f8a;
+}
+
+.lista_atividades {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.atividade {
+    width: 100%;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.atividade h2 {
+    font-size: 18px;
+    color: #023047;
+}
+
+.atividade:hover {
+    background-color: #e3e3e3;
+}
+
+.botao_del {
+    background-color: #d00000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao_del:hover {
+    background-color: #a30000;
+}
+
+.botao_del_todos {
+    width: 100%;
+    height: 45px;
+    background-color: #023047;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao_del_todos:hover {
+    background-color: #011c32;
+}
+
+/* Custom scrollbar for better experience */
+.lista_atividades::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lista_atividades::-webkit-scrollbar-track {
+    background: #f4f4f9;
+}
+
+.lista_atividades::-webkit-scrollbar-thumb {
+    background-color: #023047;
+    border-radius: 20px;
+}
+
+/* Estilização do rodapé */
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #023047;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer span {
+    color: #00b4d8;
+    font-weight: bold;
+}
